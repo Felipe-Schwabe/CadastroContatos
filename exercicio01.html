@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_CADASTRO DE CONTATOS</title><font color="blue">***</font>
+    <script src ="C:\desenvolvimento\Exercícios\Cadastro\exercicio01.js" defer></script>
+    <style>
+        body{
+            background-image:linear-gradient(to right,white,rgb(184, 184, 255),rgb(146, 146, 243),#00BEEC);
+        }
+        table{
+           font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+            background-color:#DEDEFF;
+            color: rgb(0, 0, 0);         
+        }
+        button:hover{
+            border-color:rgba(11, 212, 21, 0.731);
+            color:rgb(95, 0, 95);
+        }
+        img{
+            border-color:#00BEEC;
+        }
+
+    </style>
+</head>
+<body background="C:\desenvolvimento\html\img\branco2.jpg">
+    
+   <h1> <img  border="3" src="C:\desenvolvimento\html\img\email.png" >-Cadastro de contatos </h1>
+   <label>Nome:<font color="#FF0000">*</font></label>
+   <input type="text" id="no"><br><br>
+   <label>Email:<font color="#FF0000">*</font></label>
+   <input type="text" id="em"><br><br>
+   <label>Data De Nascimento:<font color="#FF0000">*</font></label>
+   <input type="text" id="dn">(dd/mm/aaaa)<br><br>
+   <label>CPF:<font color="#FF0000">*</font></label>
+   <input type="text" id="cpf">(xxx.xxx.xxx-xx)<br><br>
+   <label>Estado:</label>
+   <input type="text" id="es"><br><br>
+   <label>Cidade:</label>
+   <input type="text" id="ci"><br><br>
+   <label>Endereço:</label>
+   <input type="text" id="end"><br><br>
+
+   <button style="background-color: rgb(184, 184, 255);" onclick="Cadastrar()">CADASTRAR</button>
+   
+   <button style="background-color: rgb(184, 184, 255);" onclick="limpar()" >LIMPAR </button>
+
+   <button style="background-color: rgb(184, 184, 255);" onclick="preencher()" >TESTE </button>
+
+   <br><font style="color:rgb(165, 165, 255); ;">--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</font>
+   
+    <table id = "tabelaDados" width="1000" border="1" bordercolor="black" cellspacing="3" cellpadding="3" >
+    <tr bgcolor="#D3D3D3">
+    
+      <td class="td">Nome</td>
+      <td class="td">Email</td>
+      <td class="td">Data de Nascimento</td>
+      <td class="td">CPF</td>
+      <td class="td">Estado</td>
+      <td class="td">Cidade</td>
+      <td class="td">Endereço</td>
+      <td class="td">Ações</td>
+    </table>
+</html>

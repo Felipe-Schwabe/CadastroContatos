@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Entrada</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #entrada {
+            background: rgba(255, 255, 255, 0.502);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        button:hover{
+        color: darkgreen;
+        border-color:rgb(119, 45, 45);
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="entrada">
+        <h1>Bem-vindo!</h1>
+        Acesse o Cadastro de Contatos<br><br>
+       <button id="entrar" onclick="Redirecionar()">Entrar</button><br>
+       <br><aside>Feito por Felipe Schwabe</aside><br>
+       <button onclick="Dados()">Informações</button><br>
+    </div>
+    <script>
+        var nome=prompt("Qual o seu nome?")
+        alert("Bem vindo "+nome)
+        var dados ="Primeiro projeto realizado pelo jovem Felipe Schwabe,programador iniciante que atualmente faz parte da empresa Selbetti,em Joinville/Santa Catarina "
+        function Redirecionar() {
+                   window.location.href="exercicio01.html"
+       
+       }
+       function Dados(){
+         
+       alert(dados)
+
+       }
+       
+   </script>
+</body>
+</html>
